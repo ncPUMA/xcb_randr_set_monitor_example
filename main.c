@@ -100,6 +100,8 @@ static void print_monitors(xcb_connection_t *connection)
                 xcb_randr_monitor_info_next(&monitor_iter);
             }
             free(monitors_r);
+        } else {
+            printf("Error print monitors\n");
         }
     }
 }
